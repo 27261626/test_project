@@ -1,2 +1,16 @@
-# test_project
-test_project
+핼스케어 딥노이드 프로젝트
+==============================
+AI를 분석하는 프로젝트 입니다.
+
+Installation
+------------------
+다음과 같이 설치 가능합니다.
+'''''
+pip install AI_project
+''''
+Usage
+--------
+print("우리 같이 공부해요~")
+'''
+Image
+----
