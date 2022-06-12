@@ -1,0 +1,240 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Assignment 02.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/27261626/test_project/blob/main/Assignment_02.ipynb%20(%ED%8C%8C%EC%9D%B4%EC%8D%AC%202%EC%A3%BC%EC%B0%A8%EA%B3%BC%EC%A0%9C)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N9YUsOry9nD0",
+        "outputId": "5387022e-3e9a-4e7b-ea60-09647948555d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "김밥의 가격은? 5000\n",
+            "dict_values [5000, 3000, 2000]\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 사전의 구조와 이해\n",
+        "\n",
+        "price = {'김밥': 5000, '어묵':3000, '떡볶이':2000}\n",
+        "\n",
+        "print(\"김밥의 가격은?\" , price [\"김밥\"] )\n",
+        "\n",
+        "print(\"dict_values\", [5000,3000,2000] )\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 리스트의 슬라이싱을 사용하여 아래를 출력하세요\n",
+        "\n",
+        "tp = [1,2,3,4,5,6,7]\n",
+        "\n",
+        "print(tp [0])\n",
+        "\n",
+        "print(tp [:3])\n",
+        "\n",
+        "print(tp[3:])\n",
+        "\n",
+        "print(tp[-1])\n",
+        "\n",
+        "print(tp[::-1])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lQCEERSl-Wba",
+        "outputId": "8d666f3a-f0cb-48eb-ec55-b09d9a4dbcd9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "[1, 2, 3]\n",
+            "[4, 5, 6, 7]\n",
+            "7\n",
+            "[7, 6, 5, 4, 3, 2, 1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 조건문\n",
+        "# 점수를 입력받아 등급을 출력하세요\n",
+        "# 등급표 81~100\tA / 61~80\tB / 41~60\tC / 21~40\tD / 0~20\tE\n",
+        "\n",
+        "score = int(input(\"점수를 입력하세요: \"))\n",
+        "\n",
+        "# complete the blanks\n",
+        "#\n",
+        "if score >= 81 or score <= 100:\n",
+        "    a = \"A\"\n",
+        "elif score >= 61:\n",
+        "    a =\"B\"\n",
+        "\n",
+        "elif score >= 41:\n",
+        "    a =\"C\"\n",
+        "\n",
+        "elif score >= 21:\n",
+        "    a =\"D\"\n",
+        "\n",
+        "elif score >= 0:\n",
+        "    a =\"E\"\n",
+        "    \n",
+        "print('점수는  %d  점이며' %score ,  '등급은 %s 등급 입니다.' %a)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YxX6NxrNCK5z",
+        "outputId": "1c3073f5-d38e-4924-c4a8-7c5ee63871d0"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "점수를 입력하세요: 75\n",
+            "점수는  75  점이며 등급은 A 등급 입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 함수를 만들고 두 수를 입력받아 연산하세요\n",
+        "\n",
+        "a = int(input('첫 번째 정수를 입력하세요: '))\n",
+        "b = int(input('두 번째 정수를 입력하세요: '))\n",
+        "\n",
+        "\n",
+        "print(\"덧셈 함수 연산 : \" , a+b )\n",
+        "\n",
+        "print(\"곱셈 함수 연산 : \" , a*b )\n",
+        "\n",
+        "print(\"제곱 함수 연산 : \" , a**b)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mD9n7jRG-8qL",
+        "outputId": "472d539e-5f39-4a97-e917-e0ca659c2f40"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "첫 번째 정수를 입력하세요: 3\n",
+            "두 번째 정수를 입력하세요: 5\n",
+            "덧셈 함수 연산:  8\n",
+            "곱셈 함수 연산:  15\n",
+            "제곱 함수 연산:  243\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 알고리즘 생성\n",
+        "# 피보나치 수열을 계산하는 함수를 생성하고 자연수 10을 넣어 실행하세요\n",
+        "\n",
+        "def pivo(n):\n",
+        "   return pivo(n-1) + pivo(n-2) if n>=2 else n\n",
+        "\n",
+        "for n in range(1):\n",
+        "  print(pivo(10))\n",
+        "  \n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OL3QMyusC9V0",
+        "outputId": "f145491e-431d-45fa-e8ed-45891dfc9b71"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 클래스\n",
+        "# 사람 (Human) 클래스를 정의하고 (이름, 나이, 성별)을 받는 생성자를 추가하세요.\n",
+        "\n",
+        "class⸱ Human⸱ :\n",
+        "⸱ ⸱ ⸱ def⸱ __init__(self,⸱ name,age,gender):\n",
+        "⸱ ⸱ ⸱ ⸱ ⸱ ⸱ ⸱ self.name⸱ =⸱ name\n",
+        "⸱ ⸱ ⸱ ⸱ ⸱ ⸱ ⸱ self.age=age\n",
+        "⸱ ⸱ ⸱ ⸱ ⸱ ⸱ ⸱ self.gender=gender\n",
+        "⸱ ⸱ ⸱ def⸱ info(self):\n",
+        "⸱ ⸱ ⸱ ⸱ ⸱ ⸱ ⸱ print(\"이름:⸱ {}⸱ 나이:⸱ {}⸱ 성별:⸱ {}\".format(self.name,⸱ self.age,⸱ self.gender))\n",
+        "a⸱ =⸱ Human(\"박도형\",25,\"남자\")\n",
+        "a.info()\n",
+        "이름: 박도형 나이: 25 성별: 남자\n"
+      ],
+      "metadata": {
+        "id": "nYv044w8Ae0Z"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
